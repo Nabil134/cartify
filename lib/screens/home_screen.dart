@@ -7,6 +7,7 @@ import 'package:cartify/providers/login_provider.dart';
 import 'package:cartify/providers/nav_provider.dart';
 import 'package:cartify/providers/product_provider.dart';
 import 'package:cartify/providers/theme_provider.dart';
+import 'package:cartify/routes/routes_name.dart';
 import 'package:cartify/screens/cart_screen.dart';
 import 'package:cartify/screens/detail_screen.dart';
 import 'package:cartify/screens/fav_screen.dart';
@@ -197,7 +198,7 @@ Align(
                     icon: Icons.shopping_cart_outlined,
                     title: AppStrings.order.tr(),
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => CartScreen(),),);
+                      Navigator.pushNamed(context, RoutesName.cart);
                     },
                   ),
                   CustomMenuItem(
@@ -210,7 +211,7 @@ Align(
                     icon: Icons.favorite_border_outlined,
                     title: AppStrings.wishlist.tr(),
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => FavScreen(),),);
+                      Navigator.pushNamed(context, RoutesName.fav);
                     },
                   ),
                   CustomMenuItem(

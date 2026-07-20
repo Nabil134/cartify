@@ -1,5 +1,7 @@
 import 'package:cartify/routes/routes_name.dart';
 import 'package:cartify/screens/bottom_navigation_screen.dart';
+import 'package:cartify/screens/cart_screen.dart';
+import 'package:cartify/screens/fav_screen.dart';
 import 'package:cartify/views/login_view.dart';
 import 'package:cartify/views/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +17,10 @@ static Route<dynamic> generateRoute(RouteSettings settings){
       return MaterialPageRoute(builder: (context) => LoginView(),);
     case RoutesName.bottom:
       return MaterialPageRoute(builder: (context) => BottomNavigationScreen(),);
+    case RoutesName.cart:
+      return MaterialPageRoute(builder: (context) =>CartScreen(),);
+    case RoutesName.fav:
+      return MaterialPageRoute(builder: (context) => FavScreen(),);
     default:
       return MaterialPageRoute(builder: (context) => Center(child: Text("No Route Found"),),);
   }

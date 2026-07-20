@@ -43,6 +43,9 @@ dependencies:
   shared_preferences:
   easy_localization:
   country_flags:
+  flutter_local_notifications:
+  firebase_core:
+  firebase_messaging:
 
 dev_dependencies:
   flutter_test:
